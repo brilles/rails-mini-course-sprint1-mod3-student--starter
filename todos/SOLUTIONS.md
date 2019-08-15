@@ -40,3 +40,11 @@ Write a short sentence for each action that summarizes what it does
 5. create - POST - creates a new instance of an entity
 6. update - PUT/PATCH - updates a specific entity instance
 7. destroy - DELETE - deletes a specific entity instance
+
+rails console
+User.connection
+User
+first_user = Users.create
+second_user = Users.create
+first_user.update(email: "johndoe@example.com")
+second_user.update(email: "janedoe@example.com")
