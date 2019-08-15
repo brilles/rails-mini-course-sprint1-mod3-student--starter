@@ -41,10 +41,12 @@ Write a short sentence for each action that summarizes what it does
 6. update - PUT/PATCH - updates a specific entity instance
 7. destroy - DELETE - deletes a specific entity instance
 
+## Using Rails Console to Create a User
+
 rails console
 User.connection
 User
-first_user = Users.create
-second_user = Users.create
+first_user = User.create
+second_user = User.create
 first_user.update(email: "johndoe@example.com")
 second_user.update(email: "janedoe@example.com")
